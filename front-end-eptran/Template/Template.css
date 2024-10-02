@@ -1,0 +1,50 @@
+body{
+	display: flex;
+	height: 200vh;
+	width: 100%;
+	margin: 0px;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+header{
+	position: fixed;
+	display: flex;
+	z-index: 100;
+	left: 0px;
+	top: 0px;
+	height: 10%;
+	width: 100%;
+	background-color: #023859;
+	filter: drop-shadow(0px 1px 8px #a1a1a1);
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+#logo{
+	height: 70px;
+	width: auto;
+	filter: brightness(10);
+
+}
+
+i{
+	font-size: 32px;
+	color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+div{
+	position:relative;
+	margin-top: 5%;
+	width: 100%;
+}
+
+footer{
+	height: 10%;
+	width: 100%;
+	background-color: #023859;
+	filter: drop-shadow(0px 1px 8px #a1a1a1);
+}
