@@ -118,6 +118,7 @@ hr{
 	width: 100vw;
 	height: 100vh;
 	margin-top: 96px;
+	transition: 0.25s;
 }
 
 @media (max-width: 720px) {
