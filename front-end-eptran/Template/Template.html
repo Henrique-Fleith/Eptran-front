@@ -6,23 +6,60 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 	<link rel="stylesheet" href="Template.css">
-
+	
 	<title>Template Eptran</title>
 </head>
 
 <body>
-	<header>
-		
-		<i class="fa-solid fa-bars" id="bar"></i>
+	<header id="header">
+		<i class="fa-solid fa-bars" id="bar" onclick="collapse()"></i>			
 		<img src="img/logo(1).png" id="logo">
 		<i class="fa-solid fa-user"></i>
-		
-
 	</header>
 
-	<div>
+	<nav id="sideBar">
+		<div>
+			<a> Tela inicial </a> <br>
+			<a> Séries Iniciais </a> <br>
+			<a> Séries Finais </a> <br>
+			<a> Ensino Médio </a> <br>
+			<a> Login </a> <br>
+			<a> Login </a> <br>
+			<a> Login </a> <br>
+		</div>
+	</nav>
+
+	<div id="overlay"></div>
+
+	<div id="content">
 		
 	</div>
-	<footer></footer>
+
+	<footer id="footer">
+		<div>
+			<img src="img/Joinvillers.png">
+		</div>
+
+		<div>
+			<a> 
+			Informações de Contato <br> <hr style="color: white;">
+			R. Caçador, 112 - Atiradores, Joinville - SC, 89203-610 <br>
+			(47) 99121-0089 <br>
+			detrans.uet@joinville.sc.gov.br 
+			</a> 
+		</div>
+
+		<div>
+			<a id="aSocial">
+				Redes Sociais <br> <hr style="color: white;">
+				<i class="fa-brands fa-instagram" style="font-size: 16px; margin: 6px;"></i>Instagram<br>
+				<i class="fa-brands fa-square-facebook" style="font-size: 16px; margin: 6px;"></i>Facebook <br>
+				<i class="fa-brands fa-youtube" style="font-size: 14px; margin: 6px;"></i>YouTube <br>
+			</a>
+		</div>
+
+	</footer>
+
+	<script src="Template.js" ></script>
 </body>
 </html>
