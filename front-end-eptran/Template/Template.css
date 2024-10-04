@@ -25,7 +25,6 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	filter: drop-shadow(0px 10px 5px #a1a1a1);
-	transition: 0.2;
 }
 
 #logo{
@@ -54,7 +53,7 @@ nav{
 	color: white;
 	text-align: center;
 	font-size: 0px;
-	transition: 0.5s;
+	transition: 0.25s;
 }
 
 nav div{
@@ -67,7 +66,7 @@ nav div{
 }
 
 nav a{
-	transition: 0.6s;
+	transition: 0s;
 }
 
 div{
