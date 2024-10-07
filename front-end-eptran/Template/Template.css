@@ -135,11 +135,26 @@ hr{
 	z-index: 300;
 	height: 80vh;
 	width: 77vh;
-	left: 77vw;
+	left: 100vw;
 	top: 60vh;
 	transition: 0.25s;
 	animation: rotation 8s infinite  linear;
 }
+
+#car{
+	position: fixed;
+	z-index: 300;
+	width: 50vh;
+	left: 100vw;
+	bottom: 18vh;
+	transition: 0.25s;
+	rotate: 355deg;
+	
+}
+/*
+.fa-flip {
+	animation-duration: 1ms;
+  }*/
 
 @media (max-width: 720px) {
     footer {
