@@ -15,7 +15,7 @@
 body{
 	font-family: Verdana, sans-serif;
 	display: flex;
-	height: 200vh;
+	height: 100vh;
 	width: 100%;
 	margin: 0px;
 	flex-direction: column;
@@ -80,15 +80,12 @@ nav a{
 
 div{
 	position:relative;
-	margin-top: 5%;
 	width: 100%;
 }
 
 footer{
 	display: flex;
 	z-index: 100;
-	height: fit-content;
-	min-height: 192px;
 	width: 100%;
 	background-color: var(--bg-color);
 	color: white;
@@ -123,6 +120,7 @@ hr{
 	z-index: 201;
 	position: fixed;
 	background-color: #000000;
+	visibility: hidden;
 	opacity: 0%;
 	width: 100vw;
 	height: 100vh;
@@ -130,29 +128,39 @@ hr{
 	transition: 0.25s;
 }
 
-#planet{
-	position: fixed;
+#foca{
 	z-index: 300;
-	height: 80vh;
-	width: 77vh;
-	left: 100vw;
-	top: 60vh;
+	position: fixed;
+	display: flex;
+	aspect-ratio: 1/1;
+	height: 100vh;
+	width: auto;
+	top: 100vh;
+	left: 200vw;
+	transform: translate(-55%, -50%);
+	transition: 0.25s;
+}
+
+#planet{
+	height: 100%;
+	width: 100%;
+	transform: translate(50%, 50%);
 	transition: 0.25s;
 	animation: rotation 8s infinite  linear;
 }
 
 #car{
-	position: fixed;
-	z-index: 300;
-	width: 50vh;
-	left: 100vw;
-	bottom: 18vh;
+	position: relative;
+	height: 40%;
+	width: 40%;
+	left: -100%;
+	top: -22%;
+	transform: translate(50%, 50%);
 	transition: 0.25s;
-	rotate: 355deg;
-	
+	rotate: -25deg;
 }
-/*
-.fa-flip {
+
+/*.fa-flip {
 	animation-duration: 1ms;
   }*/
 
@@ -160,11 +168,20 @@ hr{
     footer {
         flex-direction: column;
     }
+	#content{
+		margin: 128px 10vw 32px 10vw;
+		max-width: 80vw; 	
+	}
 }
 
 @media (min-width: 720px) {
     footer {
         flex-direction: row;
     }
+	#content{
+		margin: 128px 20vw 32px 20vw;
+		max-width: 60vw; 	
+	}
 }
 
+/* Content*/
