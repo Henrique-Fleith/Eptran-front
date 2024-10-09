@@ -8,7 +8,7 @@
 }
 
 :root {
-	--bg-color: #29549A;
+	--bg-color: #177ac3;
   }
   
 
@@ -58,7 +58,7 @@ nav{
 	top: 96px;
 	height: 100vh;
 	width: 0%;
-	background-color: #173c77;
+	background-color: #1467a1;
 	color: white;
 	text-align: center;
 	font-size: 0px;
@@ -76,6 +76,7 @@ nav div{
 
 nav a{
 	transition: 0s;
+	font-family: Verdana, sans-serif;
 }
 
 div{
