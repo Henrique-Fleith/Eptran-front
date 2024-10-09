@@ -133,7 +133,6 @@ hr{
 	position: fixed;
 	display: flex;
 	aspect-ratio: 1/1;
-	height: 100vh;
 	width: auto;
 	top: 100vh;
 	left: 200vw;
@@ -169,8 +168,11 @@ hr{
         flex-direction: column;
     }
 	#content{
-		margin: 128px 10vw 32px 10vw;
+		margin: 128px 6vw 32px 6vw;
 		max-width: 80vw; 	
+	}
+	#foca{
+		height: 100vW;
 	}
 }
 
@@ -181,6 +183,9 @@ hr{
 	#content{
 		margin: 128px 20vw 32px 20vw;
 		max-width: 60vw; 	
+	}
+	#foca{
+		height: 100vh;
 	}
 }
 
