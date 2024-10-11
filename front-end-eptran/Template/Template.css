@@ -129,40 +129,52 @@ hr{
 	transition: 0.25s;
 }
 
-#foca{
-	z-index: 300;
-	position: fixed;
+#right{
 	display: flex;
-	aspect-ratio: 1/1;
-	width: auto;
-	top: 100vh;
-	left: 200vw;
-	transform: translate(-55%, -50%);
-	transition: 0.25s;
+	position: fixed;
+	z-index: 300;
+	width: 50vw;
+	height: 100vh;
+	left: 50vw;
+	visibility: hidden;
 }
 
-#planet{
+#left{
+	display: flex;
+	position: fixed;
+	z-index: 300;
+	width: 50vw;
+	height: 100vh;
+	visibility: hidden;
+}
+
+#planeta{
+	position: fixed;
+	width: fit-content;
+	height: 50vw;
+	top: 100%;
+	left: 100%;
+	transform: translate(-70%, -40%);
+}
+
+#planeta img{
 	height: 100%;
-	width: 100%;
-	transform: translate(50%, 50%);
-	transition: 0.25s;
-	animation: rotation 8s infinite  linear;
+	animation: rotation 8s infinite linear;
 }
 
-#car{
+#foca{
 	position: relative;
-	height: 40%;
-	width: 40%;
-	left: -100%;
-	top: -22%;
-	transform: translate(50%, 50%);
-	transition: 0.25s;
-	rotate: -25deg;
+	width: fit-content;
+	height: 20vw;
+	top: 100%;
+	left: 50%;
+	rotate: -5deg;
+	transform: translate(0%, -175%);
 }
 
-/*.fa-flip {
-	animation-duration: 1ms;
-  }*/
+#foca img{
+	height: 100%;
+}
 
 @media (max-width: 720px) {
     footer {
@@ -172,8 +184,13 @@ hr{
 		margin: 128px 6vw 32px 6vw;
 		max-width: 80vw; 	
 	}
+	#planeta{
+		height: 150vw;
+		transform: translate(-60%, -30%);
+	}
 	#foca{
-		height: 100vW;
+		height: 60vw;
+		transform: translate(-50%, -160%);
 	}
 }
 
@@ -185,9 +202,4 @@ hr{
 		margin: 128px 20vw 32px 20vw;
 		max-width: 60vw; 	
 	}
-	#foca{
-		height: 100vh;
-	}
 }
-
-/* Content*/
