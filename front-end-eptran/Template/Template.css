@@ -60,7 +60,7 @@ nav{
 	width: 0%;
 	background-color: #1467a1;
 	color: white;
-	text-align: center;
+	text-align: left;
 	font-size: 0px;
 	transition: 0.25s;
 }
@@ -82,6 +82,26 @@ nav a{
 div{
 	position:relative;
 	width: 100%;
+}
+
+#selection{
+	display: flex;
+	justify-content: center;
+	background-color: #1467a1;
+	transition: 0.2s;
+}
+
+#selection i{
+	font-size: 20px;
+}
+
+#selection a{
+	margin-left: 24px;
+}
+
+#selection:hover{
+	font-size: 22px;
+	background-color: #0b4168;
 }
 
 footer{
@@ -137,19 +157,20 @@ hr{
 	height: 100vh;
 	left: 50vw;
 	visibility: hidden;
+	transition: 0.4s;
 }
 
 #left{
 	display: flex;
 	position: fixed;
-	z-index: 300;
+	z-index: 0;
 	width: 50vw;
 	height: 100vh;
 	visibility: hidden;
 }
 
 #planeta{
-	position: fixed;
+	position: relative;
 	width: fit-content;
 	height: 50vw;
 	top: 100%;
@@ -169,7 +190,7 @@ hr{
 	top: 100%;
 	left: 50%;
 	rotate: -5deg;
-	transform: translate(0%, -175%);
+	transform: translate(-285%, -190%);
 }
 
 #foca img{
@@ -190,7 +211,7 @@ hr{
 	}
 	#foca{
 		height: 60vw;
-		transform: translate(-50%, -160%);
+		transform: translate(-350%, -180%);
 	}
 }
 
