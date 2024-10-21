@@ -61,7 +61,7 @@ header #bar:hover{
 }
 
 main{
-    margin: 112px 10% 16px 10%;
+    margin: 120px 10% 24px 10%;
 }
 
 footer{
@@ -81,6 +81,25 @@ footer div{
     color: white;
     font-size: 20px;
     text-align: center;
+}
+
+#aSocial{
+    display: flex;
+    flex-direction: column;
+    min-height: 160px;
+    max-height: 160px;
+    text-wrap: nowrap;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.link:hover{
+    font-size: 22px;
 }
 
 nav{
