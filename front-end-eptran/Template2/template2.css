@@ -103,7 +103,6 @@ nav div{
     align-items: center;
     font-size: 24px;
     color: white;
-    transition: 0.2s;
 }
 
 nav div:hover{
@@ -143,21 +142,20 @@ nav a{
     top: 200vh;
     transform: translate(-50%, -40%);
     z-index: 3;
-    transition: 0.5s;
 }
 
 #imgplanet{
     height: 100%;
-    animation: rotation 8s infinite  linear;
+    animation: rotation reverse 4s infinite  linear;
 }
 
 #imgfoca{
     position: absolute;
     height: 40%;
     width: auto;
-    top: -25%;
-    left: 5%;
-    rotate: -10deg;
+    top: -12%;
+    left: 3%;
+    rotate: -35deg;
 }
 
 @media (max-width: 720px){
