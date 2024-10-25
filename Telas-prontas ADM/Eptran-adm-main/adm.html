@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <header>
+		<i class="fa-solid fa-bars" id="bar" onclick="collapse()"></i>			
+		<img src="imgs/Logo-eptran.png" id="logo-eptran">
+		<i class="fa-solid fa-user"></i>
+	</header>
+    <main>
+        <section>
+            <span>
+                <h1>Editor de Notícia</h1>
+                <h2>Filtro de Postagem</h2>
+            </span>
+            <div class="info-post">
+                <span>
+                    <label for="etapa">Etapa Escolar</label>
+                    <select name="etapa" id="etapa">
+                        <option value="Ensino Médio">Ensino Médio</option>
+                        <option value="Ensino Fundamental II">Ensino Fundamental II</option>
+                        <option value="Ensino Fundamental I">Ensino Fundamental I</option>
+                        <option value="Pré-escola">Pré-escola</option>
+                    </select>
+                </span>
+                <span>
+                    <label for="categoria">Categoria</label>
+                    <select name="categoria" id="categoria">
+                        <option value="Legislação">Legislação</option>
+                        <!-- Need to fill -->
+                    </select>
+                </span>
+            </div>
+        </section>
+        
+        <section>
+            <div class="post-container">
+                <div class="post-data">
+                    <div class="text-data">
+                        <div class="text-data-title">
+                            <label for="post-title">Título da Postagem:</label>
+                            <input type="text" name="post-title" id="post-title">
+                        </div>
+                        <div class="text-data-content">
+                            <label for="post-content">Texto Introdutório:</label>
+                            <textarea name="post-content" id="post-content"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="image">
+                    <label for="post-image" class="custom-file">Imagem da Capa</label>
+                    <input type="file" id="post-image" name="post-image" alt="capa" accept="image/*">
+
+                    <label class="custom-file-upload">
+                        <input type="file"/>
+                    </label>
+                </div>
+            </div>
+            
+        </section>
+        <section class="news-container">
+            <label for="post-news">Notícia:</label>
+            <textarea name="post-news" id="post-news"></textarea>
+        </section>
+    </main>
+
+    <footer id="footer">
+		<div>
+			<img src="imgs/Joinvillers.png">
+		</div>
+
+		<div>
+			<a> 
+			Informações de Contato <br> <hr style="color: white;">
+			R. Caçador, 112 - Atiradores, Joinville - SC, 89203-610 <br>
+			(47) 99121-0089 <br>
+			detrans.uet@joinville.sc.gov.br 
+			</a> 
+		</div>
+
+		<div>
+			<a id="aSocial">
+				Redes Sociais <br> <hr style="color: white;">
+				<i class="fa-brands fa-instagram" style="font-size: 16px; margin: 6px;"></i>Instagram<br>
+				<i class="fa-brands fa-square-facebook" style="font-size: 16px; margin: 6px;"></i>Facebook <br>
+				<i class="fa-brands fa-youtube" style="font-size: 14px; margin: 6px;"></i>YouTube <br>
+			</a>
+		</div>
+
+	</footer>
+</body>
+</html>

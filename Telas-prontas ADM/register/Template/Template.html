@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" href="Template.css">
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+	<title>Template Eptran</title>
+</head>
+
+<body>
+	<header id="header">
+		<i class="fa-solid fa-bars" id="bar" onclick="collapse()"></i>
+		<img src="img/epitrones.png" id="logo" alt="Logo">
+		<i class="fa-solid fa-user"></i>
+	</header>
+
+	<nav id="sideBar">
+		<div>
+			<a href="#">Tela inicial</a> <br>
+			<a href="#">Séries Iniciais</a> <br>
+			<a href="#">Séries Finais</a> <br>
+			<a href="#">Ensino Médio</a> <br>
+			<a href="#">Login</a> <br>
+		</div>
+	</nav>
+
+	<div id="overlay"></div>
+
+	<div id="content">
+		<div class="register-box">
+
+			<h1>CADASTRO</h1>
+			<form>
+
+				<div class="input">
+					<label for="nome" required>Nome Completo:</label>
+					<input type="text" id="nome" name="nome" required>
+				</div>
+				
+				<div class="input">
+					<label for="nascimento" required>Data de Nascimento:</label>
+					<input type="date" id="nascimento" name="nascimento" required>
+					<i class='bx bx-cake' style='color:#29549a; font-size: 24px;'></i>
+				</div>
+
+				<div class="select-school">
+					<div class="input">
+						<label for="escola">Escola:</label>
+						<select id="escola" name="escola" required>
+							<option value="" disabled selected>Escola:</option>
+							<option value="1">Escola 1</option>
+							<option value="2">Escola 2</option>
+						</select>
+					</div>
+
+					<div class="input">
+
+						<label for="escola">Escola:</label>
+						<select id="escolaridade" name="escolaridade" required>
+							<option value="" disabled selected>Escolaridade:</option>
+							<option value="f1">Fundamental 1</option>
+							<option value="f2">Fundamental 2</option>
+							<option value="em">Ensino Médio</option>
+						</select>
+					</div>
+				</div>
+
+				<input type="password" id="senha" name="senha" placeholder="Senha" required>
+				<input type="email" id="email" name="email" placeholder="Email" required>
+				
+				<select id="genero" name="genero" required>
+					<option value="M">Masculino</option>
+					<option value="F">Feminino</option>
+					<option value="O">Outro</option>
+				</select>
+
+				<input type="text" id="cep" name="cep" placeholder="CEP" required>
+				<input type="text" id="bairro" name="bairro" placeholder="Bairro" required>
+				<input type="text" id="municipio" name="municipio" placeholder="Município" required>
+				
+				<select id="uf" name="uf" required>
+					<option value="AC">AC</option>
+					<option value="AL">AL</option>
+					<option value="AP">AP</option>
+
+				</select>
+
+				<input type="submit" value="Registrar">
+			</form>
+		</div>
+	</div>
+
+	<footer id="footer">
+		<div>
+			<img src="img/Joinvillers.png" alt="Logo Joinvillers">
+		</div>
+		<div>
+			<a>Informações de Contato <br> <hr> 
+			R. Caçador, 112 - Atiradores, Joinville - SC, 89203-610 <br>
+			(47) 99121-0089 <br> 
+			detrans.uet@joinville.sc.gov.br
+			</a>
+		</div>
+		<div>
+			<a id="aSocial">
+				Redes Sociais <br> <hr> 
+				<i class="fa-brands fa-instagram"></i> Instagram <br>
+				<i class="fa-brands fa-square-facebook"></i> Facebook <br>
+				<i class="fa-brands fa-youtube"></i> YouTube <br>
+			</a>
+		</div>
+	</footer>
+
+	<script src="Template.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-359deg);
+	}
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 96px;
+    z-index: 1;
+    background-color: #177AC3;
+    filter: drop-shadow(0px 10px 4px #a1a1a1);
+}
+
+
+header div{
+    display: flex;
+    width: 33%;
+}
+
+#divone{
+    justify-content: start;
+}
+#divtwo{
+    justify-content: center;
+}
+#divthree{
+    justify-content: end;
+}
+
+header img{
+    height: 64px;
+    filter: brightness(100);
+}
+
+header i{
+    margin: 0px 32px 0px 32px;
+    font-size: 32px;
+    color: white;
+    transition: 0.2s;
+}
+
+header #bar:hover{
+    font-size: 40px;
+}
+
+main{
+    margin: 120px 10% 24px 10%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: #177AC3;
+    filter: drop-shadow(0px -10px 4px #a1a1a1);
+}
+
+footer div{
+    display: flex;
+    justify-content: space-around;
+    margin: 16px 0px 32px 0px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+#aSocial{
+    display: flex;
+    flex-direction: column;
+    min-height: 160px;
+    max-height: 160px;
+    text-wrap: nowrap;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.link:hover{
+    font-size: 22px;
+}
+
+nav{
+    position: fixed;
+    height: 100vh;
+    width: 15%;
+    min-width: fit-content;
+    left: -80%;
+    margin-top: 96px;
+    z-index: 2;
+    background-color: #29549A;
+    transition: 0.5s;
+}
+
+nav div{
+    display: flex;
+    height: 15%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+
+nav div:hover{
+    background-color: #0d2c5e;
+    font-size: 32px;
+    
+}
+
+nav i{
+    font-size: 20px;
+    margin-right: 8px;
+    margin-left: 32px;
+}
+
+nav a{
+    margin-right: 32px;
+}
+
+#overlay{
+    margin-top: 96px;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    background-color: black;
+    opacity: 0%;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+#planet{
+    position: fixed;
+    display: flex;
+    aspect-ratio: 1/1;
+    height: 100vh;
+    left: 200vw;
+    top: 200vh;
+    transform: translate(-50%, -40%);
+    z-index: 3;
+    transition: 0.3s;
+}
+
+#imgplanet{
+    height: 100%;
+    animation: rotation reverse 4s infinite  linear;
+}
+
+#imgfoca{
+    position: absolute;
+    height: 40%;
+    width: auto;
+    top: -12%;
+    left: 3%;
+    rotate: -35deg;
+}
+
+@media (max-width: 720px){
+    footer{
+        flex-direction: column;
+    }
+    nav{
+        width: 80%;
+    }
+    #planet{
+        height: 50vh;
+    }
+    footer img{
+        width: 50%;
+        height: auto;
+    }
+    footer div{
+        width: 100%;
+        height: 33%;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 720px){
+    footer{
+        flex-direction: row;
+    }
+    nav{
+        width: 15%;
+    }
+    #planet{
+        height: 100vh;
+    }
+    footer img{
+        width: auto;
+        height: 160px;
+    }
+    footer div{
+        width: 33%;
+        height: 100%;
+        font-size: 20px;
+    }
+}

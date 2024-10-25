@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" href="Template.css">
+	<link rel="stylesheet" href="admContent.css">
+	<title>Template Eptran</title>
+</head>
+
+
+<body>
+	<header id="header">
+		<i class="fa-solid fa-bars" id="bar" onclick="collapse()"></i>			
+		<img src="img/epitrones.png" id="logo">
+		<i class="fa-solid fa-user"></i>
+	</header>
+
+	<nav id="sideBar">
+		<div>
+			<a> Página Inicial </a> <br>
+			<a> Pagina de Noticias </a> <br>
+			<a> Conteudos </a> <br>
+			<a> Quem somos Nós </a> <br>
+			<a>  </a> <br>
+			<a>  </a> <br>
+			<a>  </a> <br>
+		</div>
+	</nav>
+
+	<div id="overlay" onclick="collapse()"></div>
+
+	<div id="foca">
+		<img src="img/planeta.png" id="planet">
+		<img src="img/IMG_4532-removebg-preview (1).png" class="fa-bounce" id="car">
+	</div>
+
+	<div id="content">
+        <h3 id="graficos">Gráficos</h3>
+        <div id="content-inside">
+
+
+           
+            <div class="sides">
+                   
+                <div class="divisor">
+                    <h3>Filtros</h3>
+                </div>
+                <!--Filter form-->
+                <br>
+
+                <!--Options-->
+                <div class="questionaire">
+                    <div class="question">
+                    <label for="gender">Gênero</label>
+                        <select name="gender" id="gender">
+                            <option value="Homem">Homem</option>
+                            <option value="Mulher">Mulher</option>
+                            <option value="nao-informado">Prefiro não informar</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="question">
+                        <label for="grade">Etapa Escolar</label>
+                        <select name="grade" id="grade">
+                            <option value="Highschool">Ensino Médio</option>
+                            <option value="initialYears">1° ano até 5° ano</option>
+                            <option value="lastYears">6° ano até 9° ano</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="question">
+                        <label for="city">Cidade</label>
+                        <select name="city" id="city">
+                            <option value="joinville">Joinville</option>
+                            <option value="Balneario Camboriu">Balneario Camboriu</option>
+                            <option value="Garuva">Garuva</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="question">
+                        <label for="neighborhood">Bairro</label>
+                        <select name="neighborhood" id="neighborhood">
+                            <option value="América">América</option>
+                            <option value="Centro"></option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="question">
+                        <label for="school">Escola</label>
+                        <select name="school" id="school">
+                            <option value="Escola Sesi">Escola Sesi</option>
+                            <option value="Germano Timm">Germano Timm</option>
+                            <option value="Bonja">Bonja</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="question">
+                        <label for="gradeStart">Período Inicio</label>
+                        <input name="gradeStart" id="gradeStart" type="date">
+                    </div>
+                    <br>
+                    <div class="question">
+                        <label for="gradeEnd">Período Final</label>
+                        <input name="gradeEnd" id="gradeEnd" type="date">
+                    </div>
+                    <br>
+                </div>
+               
+                    <!--Visualizations-->
+                    <div class="divisor">
+                        <h3>Visualização</h3>
+                    </div><br>
+                    <!--Pergunta-->
+                <div class="questionaire">
+                    <form action="" method="post">
+                        <div class="question">
+                            <label for="typeVisual">Visual</label>
+                            <select name="typeVisual" id="typeVisual">
+                                <option value="nova">Nova</option>
+                                <option value="barra">Barra</option>
+                                <option value="coluna">Coluna</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="sides">
+                <div class="divisor">
+                    <h3>Gráficos</h3>
+                </div><br>
+                <div class="questionaire">
+                    <div class="question">
+                        <label for="typeGraphic">Gráfico</label>
+                        <select name="typeVisual" id="typeVisual">
+                            <option value="pizza">Pizza</option>
+                            <option value="barra">Barra</option>
+                            <option value="tabela">Tabela</option>
+                        </select>
+                    </div><br>
+                    <div class="question">
+                        <label for="exibir">Exibir</label>
+                        <select name="exibir" id="exibir">
+                            <option value="U.genero">Gênero</option>
+                            <option value="U.escolaridade">Escolaridade</option>
+                            <option value="U.uf">UF</option>
+                            <option value="U.municipio">Município</option>
+                            <option value="U.bairro">Bairro</option>
+                            <option value="U.escola">Escola</option>
+                            <option value="A.rota_acessada">Conteúdo</option>
+                    </select>
+                    </div>
+                </div>
+                <img src="img/solid-circle-png.png" alt="Grafico aq backend preguiçosos" height="500px">
+            </div>
+        </div>
+    </div>
+
+
+	<footer id="footer">
+		<div>
+			<img src="img/Joinvillers.png">
+		</div>
+
+		<div>
+			<a> 
+			Informações de Contato <br> <hr style="color: white;">
+			R. Caçador, 112 - Atiradores, Joinville - SC, 89203-610 <br>
+			(47) 99121-0089 <br>
+			detrans.uet@joinville.sc.gov.br 
+			</a> 
+		</div>
+
+		<div>
+			<a id="aSocial">
+				Redes Sociais <br> <hr style="color: white;">
+				<i class="fa-brands fa-instagram" style="font-size: 16px; margin: 6px;"></i>Instagram<br>
+				<i class="fa-brands fa-square-facebook" style="font-size: 16px; margin: 6px;"></i>Facebook <br>
+				<i class="fa-brands fa-youtube" style="font-size: 14px; margin: 6px;"></i>YouTube <br>
+			</a>
+		</div>
+
+	</footer>
+
+	<script src="Template.js" ></script>
+</body>
+</html>
