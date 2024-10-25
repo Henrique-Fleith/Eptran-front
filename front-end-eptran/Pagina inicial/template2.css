@@ -161,7 +161,6 @@ nav a{
     top: 200vh;
     transform: translate(-50%, -40%);
     z-index: 3;
-    transition: 0.3s;
 }
 
 #imgplanet{
