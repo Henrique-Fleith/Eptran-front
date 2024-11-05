@@ -1,0 +1,442 @@
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-359deg);
+	}
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 96px;
+    z-index: 1;
+    background-color: #177AC3;
+    filter: drop-shadow(0px 10px 4px #a1a1a1);
+}
+
+
+#container_1{
+    width: 125%;
+    height: 300px;
+    background-color: lightgray;
+    margin-left: -190px;
+    margin-top: -18px;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#quem_somos h2{
+    color: red;
+}
+
+#quem_somos{
+    width: 750px;
+    height: 250px;
+    margin-left: 130px;
+    margin-top: 30px;
+
+    
+}
+
+#container_2{
+ 
+    width: 125%;
+    height: 300px;
+    margin-left: -190px;
+    margin-top: -18px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#qual_missao h2{
+    color: green;
+}
+
+#qual_missao{
+    width: 750px;
+    height: 250px;
+    margin-top: 30px;
+    margin-left: 130px;
+
+}
+
+#foto1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 850px;
+    height: 265px;
+    margin-top: 18px;
+    
+}
+
+#foto{
+    background-color: #0d2c5e;
+    width: 400px;
+    height: 200px;
+    border-radius: 5%;
+   
+}
+
+#foto_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 850px;
+    height: 265px;
+    margin-top: 18px;
+    margin-left: -180px;
+    
+    
+}
+
+#foto2{
+    background-color: #0d2c5e;
+    width: 400px;
+    height: 200px;
+    border-radius: 5%;
+}
+
+
+#container_3{
+    
+    width: 125%;
+    height: 450px;
+    background-color: lightgray;
+    margin-left: -190px;
+    margin-top: -15px;
+    display: block;
+    text-align: center;
+    
+}
+
+#container_3 h2{
+    
+    color:  darkgoldenrod;
+    padding-top: 5px;
+    
+}
+
+#flexDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blco1{
+    width: 350px;
+    height: 190px;
+    background-color: green;
+    border-radius: 15px;
+    border: 2px solid green;
+    
+}
+
+.caixa12{
+    background-color:white;
+    height: 130px;
+    border-radius: 0px 0px 15px 15px;
+}
+.caixa13{
+    background-color:white;
+    height: 270px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+
+.blco2{
+    width: 380px;
+    height: 330px;
+    background-color:darkblue;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+    border: 2px solid darkblue;
+}
+
+.blco3{
+    width: 350px;
+    height: 190px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 15px;
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.blco2 h2{
+    display: flex;
+    justify-content: center;
+    color: yellow;
+}
+
+.blco2 h3{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.blco1 h3{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.blco3 h3{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.caixa12 h3{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+
+
+#container_4{
+   
+    width: 125%;
+    height: 400px;
+    margin-left: -190px;
+    margin-top: 20px;
+    text-align: center;
+
+    
+}
+
+.foto{
+    margin-top: 15px;
+    display: block;
+    width: 400px;
+    height: 400px;
+}
+
+.Perfil{
+    background-color: #0d2c5e;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 155px;
+}
+
+.Perfil img{
+    height: 95px;
+    width: 95px;
+}
+
+
+
+header div{
+    display: flex;
+    width: 33%;
+}
+
+#divone{
+    justify-content: start;
+}
+#divtwo{
+    justify-content: center;
+}
+#divthree{
+    justify-content: end;
+}
+
+header img{
+    height: 64px;
+    filter: brightness(100);
+}
+
+header i{
+    margin: 0px 32px 0px 32px;
+    font-size: 32px;
+    color: white;
+    transition: 0.2s;
+}
+
+header #bar:hover{
+    font-size: 40px;
+}
+
+main{
+    margin: 120px 10% 24px 10%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: #177AC3;
+    filter: drop-shadow(0px -10px 4px #a1a1a1);
+}
+
+footer div{
+    display: flex;
+    justify-content: space-around;
+    margin: 16px 0px 32px 0px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+#aSocial{
+    display: flex;
+    flex-direction: column;
+    min-height: 160px;
+    max-height: 160px;
+    text-wrap: nowrap;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.link:hover{
+    font-size: 22px;
+}
+
+nav{
+    position: fixed;
+    height: 100vh;
+    width: 15%;
+    min-width: fit-content;
+    left: -80%;
+    margin-top: 96px;
+    z-index: 2;
+    background-color: #29549A;
+    transition: 0.5s;
+}
+
+nav div{
+    display: flex;
+    height: 15%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+
+nav div:hover{
+    background-color: #0d2c5e;
+    font-size: 32px;
+    
+}
+
+nav i{
+    font-size: 20px;
+    margin-right: 8px;
+    margin-left: 32px;
+}
+
+nav a{
+    margin-right: 32px;
+}
+
+#overlay{
+    margin-top: 96px;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    background-color: black;
+    opacity: 0%;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+#planet{
+    position: fixed;
+    display: flex;
+    aspect-ratio: 1/1;
+    height: 100vh;
+    left: 200vw;
+    top: 200vh;
+    transform: translate(-50%, -40%);
+    z-index: 3;
+    transition: 0.3s;
+}
+
+#imgplanet{
+    height: 100%;
+    animation: rotation reverse 4s infinite  linear;
+}
+
+#imgfoca{
+    position: absolute;
+    height: 40%;
+    width: auto;
+    top: -12%;
+    left: 3%;
+    rotate: -35deg;
+}
+
+@media (max-width: 720px){
+    footer{
+        flex-direction: column;
+    }
+    nav{
+        width: 80%;
+    }
+    #planet{
+        height: 50vh;
+    }
+    footer img{
+        width: 50%;
+        height: auto;
+    }
+    footer div{
+        width: 100%;
+        height: 33%;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 720px){
+    footer{
+        flex-direction: row;
+    }
+    nav{
+        width: 15%;
+    }
+    #planet{
+        height: 100vh;
+    }
+    footer img{
+        width: auto;
+        height: 160px;
+    }
+    footer div{
+        width: 33%;
+        height: 100%;
+        font-size: 20px;
+    }
+}
