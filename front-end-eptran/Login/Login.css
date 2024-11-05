@@ -169,12 +169,13 @@ hr{
 	justify-content: center;
 	width: 90%;
 	height: 100vh;
+
 }
 
 #content{
 	height: fit-content;
 	padding: 4vh;
-	background-color: white;
+	background-color: white !important;
 	width: 70vw;
 	border-radius: 15px;
 	display: flex;
