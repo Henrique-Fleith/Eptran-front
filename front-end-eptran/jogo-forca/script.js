@@ -108,3 +108,4 @@ const jogo = (() => {
 })();
 
 window.onload = jogo.iniciarJogo;
+
