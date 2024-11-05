@@ -1,7 +1,31 @@
 // Lista de palavras e dicas sobre trânsito
 const palavras = [
-    { palavra: "macacaco", dica: "Raça do Vitor" },
- 
+    { palavra: "pare", dica: "Sinal de parada obrigatória" },
+    { palavra: "rotatoria", dica: "Tipo de cruzamento circular" },
+    { palavra: "cinto", dica: "Equipamento de segurança" },
+    { palavra: "velocidade", dica: "Deve ser controlada ao dirigir" },
+    { palavra: "cruzamento", dica: "Interseção de ruas ou estradas" },
+    { palavra: "faixa", dica: "Área destinada para pedestres atravessarem" },
+    { palavra: "semáforo", dica: "Dispositivo com luzes que controlam o trânsito" },
+    { palavra: "pedestre", dica: "Pessoa que anda a pé" },
+    { palavra: "bicicleta", dica: "Veículo de duas rodas, movido a pedal" },
+    { palavra: "acostamento", dica: "Espaço na lateral da via para emergências" },
+    { palavra: "preferencial", dica: "Indica a prioridade de passagem em cruzamentos" },
+    { palavra: "multa", dica: "Penalidade financeira por infrações de trânsito" },
+    { palavra: "airbag", dica: "Equipamento de segurança que infla em colisões" },
+    { palavra: "ultrapassagem", dica: "Ação de passar à frente de outro veículo" },
+    { palavra: "retrovisor", dica: "Espelho para ver o trânsito atrás do veículo" },
+    { palavra: "motorista", dica: "Pessoa que dirige o veículo" },
+    { palavra: "rodovia", dica: "Via de trânsito rápido entre cidades" },
+    { palavra: "motoqueiro", dica: "Pessoa que conduz motocicleta" },
+    { palavra: "corredor", dica: "Espaço entre filas de veículos" },
+    { palavra: "radar", dica: "Equipamento que monitora a velocidade dos veículos" },
+    { palavra: "congestionamento", dica: "Acúmulo de veículos que causa lentidão" },
+    { palavra: "sinalização", dica: "Conjunto de sinais e placas nas vias" },
+    { palavra: "freio", dica: "Mecanismo para reduzir a velocidade do veículo" },
+    { palavra: "farol", dica: "Luz dianteira do veículo para iluminar a via" },
+    { palavra: "pneu", dica: "Parte do veículo em contato direto com o solo" },
+    { palavra: "placa", dica: "Identificação veicular com números e letras" }
 ];
 
 let palavraEscolhida, dicaEscolhida, palavraAtual, erros, letrasUsadas;
