@@ -19,7 +19,7 @@ body {
     color: #333;
 }
 
-/* Container Principal */
+
 .container {
     background-color: WHITE;
     border: 1px solid black;
@@ -31,14 +31,14 @@ body {
     max-width: 500px;
 }
 
-/* Título */
+
 h1 {
     font-size: 2em;
     color: #333;
     margin-bottom: 20px;
 }
 
-/* Dica e Palavra */
+
 #dica {
     font-style: italic;
     margin-bottom: 20px;
@@ -59,7 +59,6 @@ h1 {
     margin-bottom: 15px;
 }
 
-/* Botões de Letras */
 #botoes-letras {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -78,14 +77,13 @@ h1 {
     transition: background-color 0.3s;
 }
 
-/* Estilo para Botões de Letras - Verde e Vermelho */
 #botoes-letras button.correct {
-    background-color: #4caf50; /* Verde */
+    background-color: #4caf50; 
     color: #ffffff;
 }
 
 #botoes-letras button.incorrect {
-    background-color: #ff4a4a; /* Vermelho */
+    background-color: #ff4a4a; 
     color: #ffffff;
 }
 
@@ -94,7 +92,7 @@ h1 {
     opacity: 0.7;
 }
 
-/* Botão de Novo Jogo */
+
 .botao-novo-jogo {
     margin-top: 15px;
     background-color: #333;
