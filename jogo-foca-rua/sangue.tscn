@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bb3gjrl1swjr8"]
+
+[ext_resource type="Texture2D" uid="uid://b4ei7ed6ra6qd" path="res://red-blood-spatter-cut-out-stock-png.webp" id="1_am70w"]
+
+[node name="Red-blood-spatter-cut-out-stock-png" type="Sprite2D"]
+scale = Vector2(0.5375, 0.5375)
+texture = ExtResource("1_am70w")

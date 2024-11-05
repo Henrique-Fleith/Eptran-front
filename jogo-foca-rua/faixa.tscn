@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://caymr3b7iq7oc"]
+
+[ext_resource type="Texture2D" uid="uid://cngffy3qyxvaa" path="res://2583677-200.png" id="1_cesdm"]
+[ext_resource type="Script" path="res://faixa.gd" id="2_grcpp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_72xpr"]
+size = Vector2(166, 18)
+
+[node name="2583677-200" type="Sprite2D"]
+position = Vector2(1, 0)
+texture = ExtResource("1_cesdm")
+script = ExtResource("2_grcpp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -53)
+shape = SubResource("RectangleShape2D_72xpr")

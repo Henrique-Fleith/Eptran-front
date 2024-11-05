@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://rqb7an5rx1lp"]
+
+[ext_resource type="Script" path="res://foca.gd" id="1_q5u1j"]
+[ext_resource type="Texture2D" uid="uid://c3a4qlcf5brjb" path="res://mudado.png" id="1_vuyry"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ggcu"]
+size = Vector2(26, 26)
+
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["player"]]
+script = ExtResource("1_q5u1j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -0.5)
+scale = Vector2(1, 0.96875)
+texture = ExtResource("1_vuyry")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_0ggcu")
