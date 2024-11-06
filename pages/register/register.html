@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./register.css">
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+	<title>Template Eptran</title>
+</head>
+<body>
+    <main>
+        <form class="form-container">
+            <h2 class="form-title">CADASTRO</h2>
+            <input type="text" class="form-input" placeholder="Nome Completo" required>
+            <input type="date" class="form-input" required>
+            <input type="text" class="form-input" placeholder="Escola" required>
+            <label for="etapa-escolar" class="form-label">Etapa escolar:</label>
+            <select id="etapa-escolar" class="form-select" required>
+                <option value="F1">Ensino Fundamental 1</option>
+                <option value="F2">Ensino Fundamental 2</option>
+                <option value="EM">Ensino Médio</option>
+            </select>
+            <label for="cep" class="form-label">Enter CEP:</label>
+            <input type="text" id="cep" class="form-input" placeholder="00000-000" maxlength="9" required>
+
+
+            <span class="row-container">
+                <span>
+                    <label for="estado" class="form-label">Estado:</label>
+                    <select id="estado" class="form-select" required>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC" selected>SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                </span>
+                <span>
+                    <label for="cidade" class="form-label">Cidade:</label>
+                    <input type="text" id="cidade" class="form-input" placeholder="Cidade" value="Joinville" required>
+                </span>
+                <span>
+                    <label for="bairro" class="form-label">Bairro:</label>
+                    <input type="text" id="bairro" class="form-input" placeholder="Bairro" required>
+                </span>
+            </span>
+
+
+            <input type="email" class="form-input" placeholder="Email" required>
+            <input type="password" class="form-input" placeholder="Senha" required>
+            <input type="password" class="form-input" placeholder="Repetir Senha" required>
+            <button type="submit" class="form-button">Cadastrar</button>
+            <a href="login.html" class="form-link">Já possuo uma conta</a>
+        </form>
+    </main>
+
+    <script src="./cep-search.js"></script>
+</body>
+</html>
